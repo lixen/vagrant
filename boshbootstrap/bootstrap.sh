@@ -12,11 +12,8 @@ function install {
         update-alternatives --set ruby /usr/bin/ruby2.0 >/dev/null 2>&1
         update-alternatives --set gem /usr/bin/gem2.0 >/dev/null 2>&1
 
-        install bundler bundler
 
-        install Git git
-        install sqldev libsqlite3-dev
-
+        install Stuff git libsqlite3-dev erlang bwm-ng bundler
         install 'Nokogiri dependencies' libxml2 libxml2-dev libxslt1-dev zlib1g-dev
         sudo gem install bosh-bootstrap --no-rdoc --no-ri
         # Needed for docs generation.
